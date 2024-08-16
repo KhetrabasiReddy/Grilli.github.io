@@ -1375,8 +1375,38 @@ textarea.input-field {
   padding: 35px 35px 25px;
 }
 
-.event-card 
+.event-card .publish-date {
 
+  position: absolute;
+  top:30px;
+  left:25px;
+  padding: 5px 10px;
+  color: var(--gold-crayola);
+  background-color: var(--black);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--letterSpacing-1);
+  line-height:14px;
+}
+
+.event-card .card-subtitle {
+  color: var(--gold-crayola);
+  text-transform: uppercase;
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--letterSpacing-2);
+  margin-block-end: 5px;
+}
+
+.event-card .card-banner .img-cover {
+  transition: var(--transition-2);
+}
+.event-card:is(:hover, :focus-within) .img-cover {transform: scale(1.05);
+}
+
+.event .btn {
+  margin-inline:auto;
+  margin-block-start: 40px;
+
+}
 
 
 /*-----------------------------------*\
